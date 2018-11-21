@@ -60,4 +60,11 @@ interface SluggableId {
 	 */
 	public function equals(SluggableId $id) : bool;
 
+	/**
+	 * Get the base contract for use in comparison checks.
+	 *
+	 * @return string
+	 */
+	public function getBaseContract() : string;
+
 }
