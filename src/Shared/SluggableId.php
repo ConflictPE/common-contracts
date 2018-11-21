@@ -24,9 +24,8 @@ declare(strict_types=1);
 namespace ConflictNetwork\Common\Contracts\Shared;
 
 /**
- * A player id is made up of two parts, the internal id and the hash id. The hash id is always present, whereas the
- * internal id may not be available. This is due to us using the hash id in all url's when requesting information about
- * a player to avoid exposing the internal identifier which is just an incrementing id.
+ * A sluggable id consists of two parts, an integer identifier that is only ever used internally and a hash representation of
+ * that identifier for use in urls as a slug. This avoids exposing the internal identifier as a preventative security measure.
  */
 interface SluggableId {
 
